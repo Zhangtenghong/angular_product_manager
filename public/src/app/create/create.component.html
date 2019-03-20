@@ -1,0 +1,20 @@
+<form (submit)="createProduct()">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Title</label>
+      <input type="text" class="form-control" name="title" [(ngModel)]="newProduct.title">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Price</label>
+      <input type="number" class="form-control" name="price" [(ngModel)]="newProduct.price">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Image url</label>
+    <input type="text" class="form-control" name="image" [(ngModel)]="newProduct.image">
+  </div>
+  <button type="submit" class="btn btn-primary">Create</button>
+  <br>
+  <br>
+  <button type="submit" class="btn btn-primary">Cancel</button>
+</form>

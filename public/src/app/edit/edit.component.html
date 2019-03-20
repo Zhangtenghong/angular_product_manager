@@ -1,0 +1,20 @@
+<form (submit)="updateProduct()">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Title</label>
+      <input type="text" class="form-control" name="editProduct.title" [(ngModel)]="editProduct.title">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Price</label>
+      <input type="number" class="form-control" name="editProduct.price" [(ngModel)]="editProduct.price">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Image url</label>
+    <input type="text" class="form-control" name="editProduct.image" [(ngModel)]="editProduct.image">
+  </div>
+  <button class="btn btn-primary">Update</button>
+  <br>
+  <br>
+  <button (click)="deleteProductFromService(editProduct._id)" type="submit" class= "btn btn-primary">Delete</button>
+</form>
